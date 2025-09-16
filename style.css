@@ -1,0 +1,258 @@
+@charset "utf-8";
+html {
+  font-size: 62.5%;
+}
+
+body{
+  margin: 0;
+  background-color: #eaeaea;
+}
+
+
+img {
+  vertical-align: bottom;
+  max-width: 100%;
+  height: auto;
+}
+
+li {
+  list-style: none;
+}
+
+/* header */
+.header_wrapper {
+  width: 100%;
+  height: auto;
+  background-color: white;
+  border-top: 2px solid #00a8ff;
+  border-bottom: 2px solid #454552;
+}
+.header_box {
+  padding: 0 5%;
+  justify-content: space-between;
+}
+.header_logo {
+  margin: 0;
+  width: 280px;
+  display: inline-block;
+  padding-right: 10%;
+  padding-top: 8px;
+}
+
+.main-nav {
+  display: flex;
+  padding: 0;
+  vertical-align: top;
+  font-size: clamp(13px, 1.6vw, 20px);
+  list-style: none;
+  justify-content: flex-end:
+}
+
+.main-nav li{
+  margin: 0 15px 0  0;
+  text-align: center;
+}
+
+.main-nav a {
+  color: #454552;
+  text-decoration: none;
+}
+.main-nav a:hover{
+  color:  #00a8ff;
+  text-align: center;
+}
+
+/* main  */
+.wrapper_grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  padding: 60px 5% 0;
+}
+.product {
+  padding: 0 0 60px;
+  text-align: center;
+}
+.picture {
+  margin: 0;
+  box-sizing: border-box;
+}
+h3 {
+  margin: 0 auto;
+  font-size: clamp(13px, 1.6vw, 20px);
+  font-weight: normal;
+  border-bottom: 1px solid #454552;
+  padding:10px 0px;
+  text-align: center;
+}
+.genre_release {
+  margin: 0 auto;
+  font-size: clamp(10px, 1.3vw, 17px);
+  padding: 10px 0;
+}
+p {
+  margin: 0 auto;
+  font-size: clamp(11px, 1.4vw, 18px);
+  padding: 0 0 10px;
+}
+
+/* button */
+.btn {
+  display: flex;
+  height: 30px;
+  padding: 0;
+  border-radius: 4px;
+  place-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.logo-img{
+  width: 20px;
+  height: 20px;
+  border: 0;
+  vertical-align: bottom;
+  line-height: 0;
+}
+.btn_steam {
+  display: block;
+  padding: 5px 5px;
+  background-color: #231f1f;
+  border-radius: 4px;
+}
+.btn_switch{
+  display: block;
+  padding: 5px 5px;
+  background-color: #e60012;
+  border-radius: 4px;
+}
+.btn_GooglePlay {
+  display: block;
+  padding: 5px 5px;
+  background-color: #00c853;
+  border-radius: 4px;
+}
+.btn_apple {
+  display: block;
+  padding: 5px 5px;
+  background-color: #be009c;
+  border-radius: 4px;
+}
+
+.btn_DLsite {
+  padding: 5px 5px;
+  font-size: 13px;
+  color: white;
+  text-decoration: none;
+  background-color: #052a84;
+  border-radius: 4px;
+}
+.btn_BOOTH {
+  padding: 5px 5px;
+  font-size: 13px;
+  color: white;
+  text-decoration: none;
+  background-color: #fc4d50;
+  border-radius: 4px;
+}
+
+/* footer */
+.footer_wrapper {
+  width: 100%;
+  height: auto;
+  padding-top: 1%;
+  padding-bottom: 2%;
+  text-align:center;
+}
+
+
+.footer_logo {
+  width: 50%;
+  box-sizing: border-box;
+  padding: 0 0 5px;
+  margin: 0 auto;
+}
+
+.copyright {
+  color: #454552;
+}
+
+
+@media screen and (min-width: 768px) {
+  .header_box {
+    display: flex;
+
+  }
+  .header_logo {
+    font-size: 0;
+    width: 40%;
+    margin-top: auto 0;
+  }
+.main-nav{
+  display: flex;
+  padding: 0;
+  vertical-align: top;
+  font-size: clamp(13px, 1.6vw, 20px);
+  list-style: none;
+  justify-content: flex-end:
+}
+  
+  .wrapper_grid {
+    display: grid;
+    gap: 0 30px;
+    grid-template-columns: repeat(2,1fr);
+    justify-items: center;
+    justify-items: stretch;
+    margin: 0 auto;
+  }
+  h3 {
+    margin: 0 auto;
+    font-weight: normal;
+    border-bottom: 1px solid #454552;
+    padding:10px 0px;
+    text-align: center;
+  }
+
+  .btn {
+    display: flex;
+    height: 40px;
+    padding: 0;
+    border-radius: 4px;
+    align-items: center;
+    place-content: center;
+    gap: 10px;
+  }
+  .btnbox {
+    padding: 0;
+  }
+  
+  .logo-img{
+    width: 30px;
+    height: 30px;
+    border: 0;
+    vertical-align: bottom;
+    line-height: 0;
+  }
+.btn_BOOTH {
+    font-size: 15px;
+    padding: 9px;
+  }
+  .btn_DLsite {
+    font-size: 15px;
+    padding: 9px;
+  }
+
+  .footer_logo {
+    margin: auto;
+    width: 30%;
+    box-sizing: border-box;
+    padding: 0 0 5px;
+  }
+
+  .copyright {
+    color: #454552;
+    font-size: clamp(13px, 1.6vw, 20px);
+  }
+}
+
+
+
